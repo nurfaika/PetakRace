@@ -1,15 +1,10 @@
 import java.util.Random;
-
 public class dadu {
-    public dadu(){
-        
-    }
-public int acak(){
-    Random random = new Random();
-    int nilaidadu=0;
-    nilaidadu = random.nextInt(6);
-    return nilaidadu;
-    System.out.println("Jumlah dadu yang keluar adalah" + );
-
+    public int rollDice()
+    {
+        int n = 0;
+        Random r = new Random();
+        n=r.nextInt(7);
+        return (n==0?1:n);
     }
 }
